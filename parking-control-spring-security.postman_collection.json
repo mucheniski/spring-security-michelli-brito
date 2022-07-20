@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "b3100ffd-7bb1-4d8c-a9d3-6b93c1aac8ee",
+		"name": "parking-control-spring-security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c0c11f73-f17e-4c6e-a6bc-df500877ff6b",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/parking-spot",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
