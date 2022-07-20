@@ -10,5 +10,6 @@ Using generated security password: xxxxxxxx......
 O tipo de autenticação default é basic auth.  
 ![](images/tipo_autenticacao_default.png)  
 
-
+A anotação @EnableWebSecurity serve para desligar todas as configurações padrão do spring security, anotando a classe WebSecirityConfig com ela, faz com que o  
+spring utilize apenas as configurações default que forem colocadas lá.  
 

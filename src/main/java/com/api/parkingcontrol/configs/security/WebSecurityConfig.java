@@ -10,8 +10,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-            .httpBasic()
+                .httpBasic()
             .and()
-            .authorizeHttpRequests().anyRequest().authenticated(); // Todas as solicitações http precisam ser autenticadas
+                .authorizeHttpRequests().anyRequest().authenticated() // Todas as solicitações http precisam ser autenticadas
+            .and()
+                .csrf().disable(); // Desabilitando a proteção csrf
     }
 }

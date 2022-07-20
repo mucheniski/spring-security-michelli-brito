@@ -1,0 +1,22 @@
+        {
+            "parkingSpotNumber": "325",
+            "licensePlateCar": "BBB0000",
+            "brandCar": "FORD",
+            "modelCar": "KA",
+            "colorCar": "PRATA",
+            "registrationDate": "2022-07-20T19:59:09Z",
+            "responsibleName": "BRUNA MUCHENISKI",
+            "apartment": "25",
+            "block": "3"
+        },
+        {
+            "parkingSpotNumber": "324",
+            "licensePlateCar": "AAA0000",
+            "brandCar": "FORD",
+            "modelCar": "KA",
+            "colorCar": "PRATA",
+            "registrationDate": "2022-07-20T19:57:13Z",
+            "responsibleName": "DIEGO MUCHENISKI",
+            "apartment": "24",
+            "block": "3"
+        }
