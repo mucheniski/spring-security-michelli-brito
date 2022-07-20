@@ -12,13 +12,13 @@
 					"type": "basic",
 					"basic": [
 						{
-							"key": "username",
-							"value": "user",
+							"key": "password",
+							"value": "123456",
 							"type": "string"
 						},
 						{
-							"key": "password",
-							"value": "155eb94b-8955-47de-8957-4addd247b91d",
+							"key": "username",
+							"value": "diego",
 							"type": "string"
 						}
 					]
