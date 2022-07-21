@@ -12,7 +12,7 @@ public class ParkingControlApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ParkingControlApplication.class, args);
-		System.out.printf("Senha gerada: " + new BCryptPasswordEncoder().encode("123456"));
+		System.out.printf("Senha gerada: " + new BCryptPasswordEncoder().encode("123456") + " ========");
 	}
 
 	@GetMapping("/")
