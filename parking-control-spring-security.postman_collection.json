@@ -12,13 +12,13 @@
 					"type": "basic",
 					"basic": [
 						{
-							"key": "password",
-							"value": "123456",
+							"key": "username",
+							"value": "noah",
 							"type": "string"
 						},
 						{
-							"key": "username",
-							"value": "diego",
+							"key": "password",
+							"value": "123456",
 							"type": "string"
 						}
 					]
@@ -113,13 +113,13 @@
 					"type": "basic",
 					"basic": [
 						{
-							"key": "password",
-							"value": "8f4e901e-1840-4ce9-b4c0-01509dc1be88",
+							"key": "username",
+							"value": "noah",
 							"type": "string"
 						},
 						{
-							"key": "username",
-							"value": "user",
+							"key": "password",
+							"value": "123456",
 							"type": "string"
 						}
 					]
