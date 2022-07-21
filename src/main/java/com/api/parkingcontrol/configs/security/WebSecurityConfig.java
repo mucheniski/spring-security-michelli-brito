@@ -1,8 +1,10 @@
 package com.api.parkingcontrol.configs.security;
 
+import com.api.parkingcontrol.enums.RoleNameEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -12,6 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    public static final String PARKING_SPOT_BASE_URI = "/parking-spot";
     @Autowired
     private UserDetailsServiceImpl userDetailsService;
 
@@ -20,7 +23,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .httpBasic()
             .and()
-                .authorizeHttpRequests().anyRequest().authenticated() // Todas as solicitações http precisam ser autenticadas
+                .authorizeHttpRequests()
+                .antMatchers(HttpMethod.GET, PARKING_SPOT_BASE_URI + "/**").permitAll()
+                .antMatchers(HttpMethod.POST, PARKING_SPOT_BASE_URI).hasRole(RoleNameEnum.ROLE_USER.toString())
+                .antMatchers(HttpMethod.DELETE, PARKING_SPOT_BASE_URI + "/**").hasRole(RoleNameEnum.ROLE_ADMIN.toString())
+                .anyRequest().authenticated() // Todas as solicitações http precisam ser autenticadas
             .and()
                 .csrf().disable(); // Desabilitando a proteção csrf
     }
