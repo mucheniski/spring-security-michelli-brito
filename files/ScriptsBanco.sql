@@ -22,10 +22,6 @@ INSERT INTO public.tb_user_roles
 (user_id, role_id)
 VALUES('68a9707c-8f20-4b1e-8280-14d461325daa', '5545a9da-b323-41e1-9ca6-373b2e02f5ed');
 
-INSERT INTO public.tb_user_roles
-(user_id, role_id)
-VALUES('68a9707c-8f20-4b1e-8280-14d461325daa', '2938ea93-e689-4063-b74d-66b18119e890');
-
 
 select tb_user.username,
 	   tb_role.role_name
